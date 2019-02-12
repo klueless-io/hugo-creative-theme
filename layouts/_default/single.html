@@ -8,7 +8,7 @@
     </p>
 
     <p class="col-lg-">
-        <img  class="img-responsive" src="//cdn.shopify.com/s/files/1/2516/6600/articles/image001_69961675-1b0a-48e5-9eb5-f763a496bd5b.jpg?v=1526101340" alt="Cat Breed Spotlight: The Ocicat">
+        <img  class="img-responsive img-thumbnail" src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" >
     </p>
 
     <p> {{ .Content }} </p>
