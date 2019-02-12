@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<h1>{{ .Title }} - TERMS - Type: {{ .Type }}</h1>
+<h1> {{ .Title }} </h1>
+<p> {{ .Content }} </p>
+
+{{ $baseurl := .Site.BaseURL }}
+
+{{ $plural := .Data.Plural }}
+
+{{ range $key, $value := .Data.Terms }}
+    <a href="{{ $baseurl }}/{{ $plural }}/{{ $key }}">{{ $key }}</a><br />
+{{ end }}
+
+{{ end }}

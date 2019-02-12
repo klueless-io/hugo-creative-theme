@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+    <div class='container'>
+
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+
+        <div class='posts'>
+
+            {{ range .Pages }}
+
+            <div class='col-lg-4'>
+
+                <img src="{{ .Params.featured_image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail"/>
+
+                <div>
+                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+                    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                    <br />
+                    {{ .Summary | truncate 120 }}
+
+                    {{ if .Summary }}
+                        <a href="{{ .RelPermalink }}">View full article →</a>
+                    {{ end }}
+
+                </div>
+
+            </div>
+            {{ end }}
+        
+        </div>
+
+    </div>
+
+{{ end }}
