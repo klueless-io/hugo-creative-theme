@@ -10,21 +10,20 @@
             {{ $paginator := .Paginate (where .Data.Pages "Type" "news") }}
             {{ range $paginator.Pages }}
 
-            <div class='col-lg-4 col-md-6'>
+            <div class='col-lg-4 col-md-6 list-item'>
 
-                <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail"/>
+                <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail list-image"/>
 
+                <h2 class='list-title'><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+                <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                
                 <div class='summary'>
-                    <h2><a href="{{ .RelPermalink }}">{{ .Title }} ::: {{.Type}}</a></h2>
-
-                    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-                    <br />
-                    {{ .Summary | truncate 120 }}
+                    {{ .Summary | truncate 190 }}
 
                     {{ if .Summary }}
-                        <a href="{{ .RelPermalink }}">View full article →</a>
+                        <a href="{{ .RelPermalink }}">View full article→</a>
                     {{ end }}
-
                 </div>
 
             </div>
