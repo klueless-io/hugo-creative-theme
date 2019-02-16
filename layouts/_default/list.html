@@ -12,7 +12,15 @@
 
             <div class='col-lg-4 col-md-6 list-item'>
 
-                <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail list-image"/>
+                <!-- <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail list-image"/> -->
+
+
+                <div class='featured-image img-thumbnail'>
+                    <div class='background-image' style='background-image: url({{ .Params.image }})'>
+                </div>
+            </div>
+                <!-- <img src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" class="img-thumbnail list-image"/> -->
+
 
                 <h2 class='list-title'><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 

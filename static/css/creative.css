@@ -538,5 +538,19 @@ h2.list-title {
 }
 .list-item .summary {
     margin-top: 8px;
-    height: 80px;
+    height: 90px;
+}
+
+.list-item .featured-image {
+    padding: 5px; 
+    height: 250px; 
+    width: 100%; 
+}
+
+.list-item .featured-image .background-image {
+    height: 100%; 
+    width: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
