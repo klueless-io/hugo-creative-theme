@@ -575,6 +575,6 @@ h2.list-title {
 .pagination > li > a {
     padding: 6px 12px;
     /* background-color: #ffffff; */
-    border: 0px;
+    /* border: 0px; */
     margin: 0 3px;
   }
