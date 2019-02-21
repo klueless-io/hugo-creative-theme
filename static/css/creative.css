@@ -15,8 +15,8 @@ body {
 }
 
 hr {
-    max-width: 50px;
-    border-width: 3px;
+    border-width: 1px;
+    width: 80%;
 }
 
 hr.light {

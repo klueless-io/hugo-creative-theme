@@ -1,8 +1,12 @@
 {{ define "main" }}
 
-    <div class='container'>
+
+    <div class='container' style="padding-top: 100px;">
 
         <h1>{{ .Title }}</h1>
+
+        {{ partial "breadcrumb.html" . }}
+
         {{ .Content }}
 
         <div class='posts'>

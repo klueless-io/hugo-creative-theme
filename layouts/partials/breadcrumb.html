@@ -1,0 +1,13 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ $fullurl := print ( .RelPermalink | replaceRE "[^/]+/$" "") }}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">home</a></li>
+    {{ range $index, $element := split $fullurl "/" }}
+    {{ $.Scratch.Add "path" $element }}
+    {{ if ne $element "" }}
+    <li class="breadcrumb-item"><a href='{{ $baseurl }}{{ $.Scratch.Get "path" }}'>{{ if isset $.Site.Data.titles . }} {{index $.Site.Data.titles . }} {{ else }} {{ . }} {{ end }}</a></li>
+    {{ $.Scratch.Add "path" "/" }}
+    {{ end }}
+    {{ end }}
+    <li class="breadcrumb-item active">{{ lower .Title }}</li>
+</ol>
