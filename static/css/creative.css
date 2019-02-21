@@ -24,17 +24,17 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
     color: lightgreen;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color: #eb3812;
     color: lightgreen;
+    text-decoration: none;
 }
 
 #about a {
@@ -516,6 +516,14 @@ h1 {
 h2.section-heading {
     /* Not sure if this needs customization yet */
 }
+
+.posts .meta {
+    position: relative;
+    display: inline-block;
+    font-size: smaller;
+    color: #808080;
+}
+
 h2, h2.list-title {
     font-family: 'Montserrat';
     letter-spacing: 3px;
