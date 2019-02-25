@@ -38,6 +38,12 @@ Add the following to .gitmodules
     url = git@github.com:klueless-io/hugo-creative-theme.git
 ```
 
+Update local repository with remote modules
+
+```
+git submodule update --remote
+```
+
 ### The config file
 
 Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-creative-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-creative-theme/blob/master/exampleSite/config.toml).
