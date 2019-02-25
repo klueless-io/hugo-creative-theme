@@ -22,6 +22,22 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 After installing the Creative Theme successfully it requires a just a few more steps to get your site running.
 
 
+## .gitmodules
+
+Inside of your hugo website create a file called .gitmodules
+
+```
+touch .gitmodules
+```
+
+Add the following to .gitmodules
+
+```
+[submodule "themes/hugo-creative-theme"]
+    path = themes/hugo-creative-theme
+    url = git@github.com:klueless-io/hugo-creative-theme.git
+```
+
 ### The config file
 
 Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-creative-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-creative-theme/blob/master/exampleSite/config.toml).
