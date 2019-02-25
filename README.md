@@ -27,6 +27,8 @@ After installing the Creative Theme successfully it requires a just a few more s
 Inside of your hugo website create a file called .gitmodules
 
 ```
+git submodule add git@github.com:klueless-io/hugo-creative-theme.git themes/hugo-creative-theme
+
 touch .gitmodules
 ```
 
