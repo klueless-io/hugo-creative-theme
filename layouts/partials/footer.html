@@ -2,14 +2,12 @@
 
     <div class="row container">
         <div class="col-md-4 col-lg-4">
-            <h4 class="title text-center">{{ .Site.Params.footer.head | default .Title }}</h4>
-            <hr class="light">
-        
+            <h4 class="title">{{ .Site.Params.footer.head | default .Title }}</h4>
+
             <p>{{ .Site.Params.footer.description }}</p>
         </div>
         <div class="col-md-4 col-lg-4">
-            <h4 class="title text-center">Company Policy</h4>
-            <hr class="light">
+            <h4 class="title">Company Policy</h4>
         
             <ul class="footer_menu">
         
@@ -18,9 +16,9 @@
                 <li><a href="/pages/contact-us" title="Contact Us">Contact Us</a></li>
         
                 <li><a href="/pages/price-guarantee" title="Price Guarantee">Price Guarantee</a></li>
-        
+<!--         
                 <li><a href="/pages/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
-        
+-->
                 <li><a href="/pages/shipping-return" title="Shipping &amp; Return">Shipping &amp; Return</a></li>
         
                 <li><a href="/pages/terms-of-service" title="Terms Of Service">Terms Of Service</a></li>
@@ -29,8 +27,7 @@
         
         </div>
         <div class="col-md-4 col-lg-4">
-            <h4 class="title text-center">News and Updates</h4>
-            <hr class="light">
+            <h4 class='title'>News and Updates</h4>
         
             <p>Sign up to get the latest on sales, new releases and more …</p>
 
@@ -64,5 +61,3 @@
         </div>
     
 </section>
-
-
