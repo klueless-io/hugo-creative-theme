@@ -14,6 +14,8 @@
         <img  class="img-responsive img-thumbnail" src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" >
     </p>
 
+    {{ partial "social-share.html" . }}
+
     <p> {{ .Content }} </p>
 
     <hr />
