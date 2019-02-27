@@ -1,10 +1,22 @@
 {{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ with $related }}
-<div class="related-content">
-  <h2>Related content</h2>
-  <ul class="article-gallery">
+<br /><br />
+<h2>Related content</h2>
+<div class="row">
     {{ range . }}
-    {{ .Render "gallery" }}
+    <div class='col-md-4'>
+        <a  href="{{ .RelPermalink }}">
+          <img class="img-responsive img-thumbnail" src="{{.Params.image}}" alt  ="">
+        </a>
+          <h3>{{ .Title }}</h3>
+          {{ .Summary | truncate 190 }}
+          {{ if .Summary }}
+          <a href="{{ .RelPermalink }}">View full article→</a>
+          {{ end }}
+
+      </div>
+    </li>
+
     {{ end }}
   </ul>
 </div>
