@@ -28,8 +28,6 @@ Inside of your hugo website create a file called .gitmodules
 
 ```
 git submodule add git@github.com:klueless-io/hugo-creative-theme.git themes/hugo-creative-theme
-
-touch .gitmodules
 ```
 
 Add the following to .gitmodules
@@ -44,6 +42,12 @@ Update local repository with remote modules
 
 ```
 git submodule update --remote
+```
+
+Fix (new commits) issue
+```
+git diff
+git submodule update
 ```
 
 ### The config file
