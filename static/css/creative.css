@@ -682,3 +682,13 @@ ul.footer_menu {
     /* border: 0px; */
     margin: 0 3px;
 }
+
+/* Social Buttons */
+
+
+.social-links .fa-facebook-square { color: #3b5998 }
+.social-links .fa-twitter-square { color: #55acee }
+.social-links .fa-pinterest-square { color: #bd081c }
+.social-links .fa-envelope-square { color: #666 }
+.social-links .fa-linkedin-square { color: #007bb5 }
+.social-links .fa-reddit-square { color: #ff4500 }
