@@ -10,10 +10,6 @@
         <span>{{ .Date.Format "January 2, 2006" }}</span>
     </p>
 
-    <p class="col-lg-">
-        <img  class="img-responsive img-thumbnail" src="{{ .Params.image }}" alt="{{ .Params.alt | default .Params.title }}" >
-    </p>
-
     <p> {{ .Content }} </p>
 
     {{ partial "related-post.html" . }}
